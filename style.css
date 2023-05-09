@@ -1,0 +1,19 @@
+/* Using 2 Google fonts, Rampart One for the logo and Fredoka for the rest of game */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Rampart+One&display=swap');
+
+/* Apply default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Fredoka, sans-serif;
+    color: green;
+}
+
+h1 {
+    font-family: Rampart One, sans-serif;
+}
