@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37b0d92d6a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors Game</title>
 </head>
@@ -38,15 +39,15 @@
             <p>Choose Rock, Paper, or Scissors to play against the computer</p>
         </div>
 
-        <!-- Game Icons Subsection -->
-        <div id="icons">
-            <img src="rock.png" alt="Rock Icon">
-            <img src="paper.png" alt="Paper Icon">
-            <img src="scissors.png" alt="Scissors Icon">
+        <!-- Game buttons Subsection that utilizes emojis-->
+        <div class="game-buttons">
+            <button class="rock">🪨</button>
+            <button class="paper">📜</button>
+            <button class="scissors">✂️</button>
         </div>
 
         <!-- Win/Loss/Tie Subsection -->
-        <div id="outcome">
+        <div class="outcome">
             <h2>Outcome</h2>
             <p>You: <span>0</span></p>
             <p>Computer: <span>0</span></p>
@@ -57,9 +58,16 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook Icon"></a></li>
-                <li><a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram Icon"></a></li>
-                <li><a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter Icon"></a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)"><i
+                            class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)"><i
+                            class="fa-brands fa-square-twitter"></i></a>
+                </li>
             </ul>
         </nav>
     </footer>
