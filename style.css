@@ -12,11 +12,12 @@
 /* Global styles */
 body {
     font-family: Fredoka, sans-serif;
-    color: green;
+    color: royalblue;
 }
 
 h1 {
     font-family: Rampart One, sans-serif;
+    font-size: 2rem;
 }
 
 h1,
@@ -35,6 +36,10 @@ a {
     text-decoration: none;
 }
 
+.game-buttons {
+    text-align: center;
+}
+
 button {
     font-size: 2rem;
     margin: 1rem;
@@ -47,4 +52,23 @@ button {
 
 button:hover {
     transform: scale(1.2);
+}
+
+/* Navigation bar */
+nav {
+    background-color: lightyellow;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.social-media-link {
+    font-size: 1.5rem;
 }
