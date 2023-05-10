@@ -7,19 +7,19 @@ const computerScore = document.querySelector("#computer-score");
 
 // Add event listeners to game buttons
 buttons.forEach(function (button) {
-    buttonEventListener("click", function () {
+    button.addEventListener("click", function () {
         const playerChoice = button.dataset.choice;
         playRound(playerChoice);
     });
 });
 
 // Initialize scores 
-let totalPlayerScrore = 0;
+let totalPlayerScore = 0;
 let totalComputerScore = 0;
 
 // Function to play a round of the game
 function playRound(playerChoice) {
-    const choices = ["rock", "computer", "scissors"];
+    const choices = ["rock", "paper", "scissors"];
     const computerChoice = choices[Math.floor(Math.random() * 3)];
 
     // Determine winner
@@ -39,10 +39,24 @@ function playRound(playerChoice) {
     }
 
     // Update round result text and scores
-    roundResultText = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
+    roundResultText.textContent = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
     playerScore.textContent = totalPlayerScore;
     computerScore.textContent = totalComputerScore;
 }
+
+// Add event listener to reset button 
+resetButton.addEventListener("click", resetGame);
+
+// Function to reset the game 
+function resetGame() {
+    totalPlayerScore = 0;
+    playerScore.textContent = totalPlayerScore;
+    totalComputerScore = 0;
+    computerScore.textContent = totalComputerScore;
+    roundResultText.textContent = "";
+}
+
+
 
 
 
