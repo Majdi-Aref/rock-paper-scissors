@@ -45,7 +45,7 @@ button {
     margin: 1rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: #fff;
+    background-color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -65,10 +65,46 @@ nav ul {
     justify-content: space-around;
 }
 
+nav li {
+    text-align: center;
+}
+
 nav a:hover {
     color: orange;
 }
 
 .social-media-link {
     font-size: 1.5rem;
+}
+
+/* Game rules section styles */
+
+.rules {
+    text-align: center;
+}
+
+.rules ul {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* Play section styles */
+.message p {
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* Result section styles */
+.outcome p {
+    text-align: center;
+}
+
+.computer-paragraph {
+    margin-bottom: 1rem;
+}
+
+.outcome span {
+    font-weight: bold;
+    color: orangered;
 }

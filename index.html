@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Aweseom link -->
     <script src="https://kit.fontawesome.com/37b0d92d6a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors Game</title>
@@ -20,42 +21,40 @@
     </nav>
     <nav>
         <ul>
-            <li><a href="#instructions">Game Rules</a></li>
-            <li><a href="#game">Play Game</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#game">Play</a></li>
+            <li><a href="#outcome">Outcome</a></li>
         </ul>
     </nav>
 
     <!-- Rules Section -->
     <section class="rules">
-        <h3>Game Rules</h3>
+        <h3>Rules</h3>
         <ul>
-            <li>Rock beats Scissors</li>
-            <li>Paper beats Rock</li>
-            <li>Scissors beats Paper</li>
+            <li>Rock beats Scissors.</li>
+            <li>Paper beats Rock.</li>
+            <li>Scissors beats Paper.</li>
         </ul>
     </section>
 
-    <!-- Game Section -->
-    <section class="game">
-        <!-- Message Area Subsection -->
-        <div class="message">
-            <h3>Make your move</h3>
-            <p>Choose Rock, Paper, or Scissors to play against the computer</p>
-        </div>
+    <!-- Play Section -->
+    <section class="message">
+        <h3>Play</h3>
+        <p>Choose Rock, Paper, or Scissors to play against the computer!</p>
 
-        <!-- Game buttons Subsection that utilizes emojis-->
+        <!-- Game buttons that utilizes emojis-->
         <div class="game-buttons">
             <button class="rock">🪨</button>
             <button class="paper">📜</button>
             <button class="scissors">✂️</button>
         </div>
+    </section>
 
-        <!-- Result Subsection -->
-        <div class="outcome">
-            <h3>Outcome</h3>
-            <p>You: <span>0</span></p>
-            <p>Computer: <span>0</span></p>
-        </div>
+    <!-- Result section -->
+    <section class="outcome">
+        <h3>Outcome</h3>
+        <p>You: <span>0</span></p>
+        <p class="computer-paragraph">Computer: <span>0</span></p>
     </section>
 
     <!-- Footer Navigation Bar that contains the social media links -->
@@ -76,6 +75,7 @@
         </nav>
     </footer>
 
+    <!-- Link to JavaScript file -->
     <script src="script.js"></script>
 </body>
 
