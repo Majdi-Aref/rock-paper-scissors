@@ -15,6 +15,10 @@ body {
     color: royalblue;
 }
 
+#title {
+    margin: 0;
+}
+
 h1 {
     font-family: Rampart One, sans-serif;
     font-size: 2rem;
@@ -24,7 +28,7 @@ h1,
 h2,
 h3 {
     text-align: center;
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 
 ul {
@@ -70,11 +74,17 @@ nav li {
 }
 
 nav a:hover {
-    color: orange;
+    color: brown;
 }
 
 .social-media-link {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 220px) {
+    nav ul {
+        display: initial;
+    }
 }
 
 /* Game rules section styles */
@@ -88,6 +98,11 @@ nav a:hover {
     margin-left: 0.5rem;
 }
 
+.rules p {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
 /* Play section styles */
 .message p {
     text-align: center;
@@ -96,15 +111,26 @@ nav a:hover {
 }
 
 /* Result section styles */
+
+.outcome-heading {
+    margin-top: 0;
+}
+
 .outcome p {
     text-align: center;
 }
 
-.computer-paragraph {
-    margin-bottom: 1rem;
+.outcome span {
+    font-weight: ;
+    color: orangered;
 }
 
-.outcome span {
-    font-weight: bold;
+.reset-button-div {
+    text-align: center;
+}
+
+#reset-button {
+    font-size: 1rem;
     color: orangered;
+    font-family: inherit;
 }

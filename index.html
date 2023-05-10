@@ -11,53 +11,59 @@
     <title>Rock Paper Scissors Game</title>
 </head>
 
-<body>
+<body id="game-container">
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html">
+                <h1 id="title">Rock Paper Scissors</h1>
+            </a>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#game">Play</a></li>
+                <li><a href="#outcome">Outcome</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">
-            <h1>Rock Paper Scissors</h1>
-        </a>
-    </nav>
-    <nav>
-        <ul>
-            <li><a href="#rules">Rules</a></li>
-            <li><a href="#game">Play</a></li>
-            <li><a href="#outcome">Outcome</a></li>
-        </ul>
-    </nav>
+    <main>
+        <!-- Rules Section -->
+        <section class="rules">
+            <h3>Rules</h3>
+            <p>Rock beats scissors, paper beats rock & scissors beats paper.</p>
+        </section>
 
-    <!-- Rules Section -->
-    <section class="rules">
-        <h3>Rules</h3>
-        <ul>
-            <li>Rock beats Scissors.</li>
-            <li>Paper beats Rock.</li>
-            <li>Scissors beats Paper.</li>
-        </ul>
-    </section>
+        <!-- Play Section -->
+        <section class="message">
+            <h3>Play</h3>
+            <p>Choose Rock, Paper, or Scissors to play against the computer!</p>
 
-    <!-- Play Section -->
-    <section class="message">
-        <h3>Play</h3>
-        <p>Choose Rock, Paper, or Scissors to play against the computer!</p>
+            <!-- Game buttons that utilizes emojis-->
+            <div class="game-buttons">
+                <button id="rock-button" class="game-button" data-choice="rock">🪨</button>
+                <button id="paper-button" class="game-button" data-choice="paper">📜</button>
+                <button id="scissors-button" class="game-button" data-choice="scissors">✂️</button>
+            </div>
+        </section>
 
-        <!-- Game buttons that utilizes emojis-->
-        <div class="game-buttons">
-            <button class="rock">🪨</button>
-            <button class="paper">📜</button>
-            <button class="scissors">✂️</button>
-        </div>
-    </section>
+        <!-- Result section -->
+        <section class="outcome">
+            <h3 class="outcome-heading">Outcome</h3>
+            <p id="round-result">Round Result: <span id="round-result-text"></span></p>
+            <div class="final-result">
+                <p>Final Result:</p>
+                <p id="You">You: <span id="player-score">0</span></p>
+                <p id="Computer" class="computer-paragraph">Computer: <span id="computer-score">0</span></p>
+            </div>
+            <div class="reset-button-div">
+                <button id="reset-button">Reset & Play Again</button>
+            </div>
+        </section>
+    </main>
 
-    <!-- Result section -->
-    <section class="outcome">
-        <h3>Outcome</h3>
-        <p>You: <span>0</span></p>
-        <p class="computer-paragraph">Computer: <span>0</span></p>
-    </section>
-
-    <!-- Footer Navigation Bar that contains the social media links -->
+    <!-- Footer Navigation Bar that contains the social media links thanks to Font Awesome-->
     <footer>
         <nav>
             <ul>
