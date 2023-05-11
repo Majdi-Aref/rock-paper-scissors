@@ -8,17 +8,22 @@ const computerScore = document.querySelector("#computer-score");
 // Add event listeners to game buttons
 buttons.forEach(function (button) {
     button.addEventListener("click", function () {
-        const playerChoice = button.dataset.choice;
-        playRound(playerChoice);
+        if (gameOver === false) {
+            const playerChoice = button.dataset.choice;
+            playRound(playerChoice);
+        }
     });
 });
 
-// Initialize scores 
+// Initialize scores and game over variable
 let totalPlayerScore = 0;
 let totalComputerScore = 0;
+let gameOver = false;
 
 // Function to play a round of the game
 function playRound(playerChoice) {
+
+    // Getting computer choice
     const choices = ["rock", "paper", "scissors"];
     const computerChoice = choices[Math.floor(Math.random() * 3)];
 
@@ -42,6 +47,15 @@ function playRound(playerChoice) {
     roundResultText.textContent = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
     playerScore.textContent = totalPlayerScore;
     computerScore.textContent = totalComputerScore;
+
+    // Check if either player has won 10 rounds
+    if (totalPlayerScore === 10) {
+        roundResultText.textContent = `You have won 10 rounds! You are victorious! 🎉 Please press the "Reset & Play Again" button to start a new game.`;
+        gameOver = true;
+    } else if (totalComputerScore === 10) {
+        roundResultText.textContent = `The computer has won 10 rounds! The computer is victorious! 🎉 Please press the "Reset & Play Again" button to start a new game.`;
+        gameOver = true;
+    }
 }
 
 // Add event listener to reset button 
@@ -54,14 +68,5 @@ function resetGame() {
     totalComputerScore = 0;
     computerScore.textContent = totalComputerScore;
     roundResultText.textContent = "";
+    gameOver = false;
 }
-
-
-
-
-
-
-
-
-
-
