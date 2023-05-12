@@ -13,12 +13,13 @@
 
 <body id="game-container">
     <header>
-        <!-- Navigation Bar -->
+        <!-- Logo's navigation Bar -->
         <nav class="title-nav">
             <a href="index.html">
                 <h1 id="title">Rock Paper Scissors</h1>
             </a>
         </nav>
+        <!-- Navigation bar of rules, play, and outcome sections -->
         <nav>
             <ul>
                 <li><a href="#rules">Rules</a></li>
@@ -29,18 +30,18 @@
     </header>
 
     <main>
-        <!-- Rules Section -->
+        <!-- Rules section -->
         <section class="rules">
             <h3>Rules</h3>
             <p>Rock beats scissors, paper beats rock & scissors beats paper.</p>
         </section>
 
-        <!-- Play Section -->
+        <!-- Play section -->
         <section class="message">
             <h3>Play</h3>
             <p>Choose Rock, Paper, or Scissors to play against the computer!</p>
 
-            <!-- Game buttons that utilizes emojis-->
+            <!-- Game buttons that utilizes emojis from Emojipedia -->
             <div class="game-buttons">
                 <button id="rock-button" class="game-button" data-choice="rock">🪨</button>
                 <button id="paper-button" class="game-button" data-choice="paper">📜</button>
@@ -51,12 +52,18 @@
         <!-- Result section -->
         <section class="outcome">
             <h3 class="outcome-heading">Outcome</h3>
+
+            <!-- Round result -->
             <p id="round-result">Round Result: <span id="round-result-text"></span></p>
             <div class="final-result">
                 <p>Final Result:</p>
+
+                <!-- Player and comuter scores -->
                 <p id="You">You: <span id="player-score">0</span></p>
                 <p id="Computer" class="computer-paragraph">Computer: <span id="computer-score">0</span></p>
             </div>
+
+            <!-- Reset and play again button -->
             <div class="reset-button-div">
                 <button id="reset-button">Reset & Play Again</button>
             </div>

@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-- Rock Paper Scissors is an implementation of the popular game, Rock Paper Scissors. People who like this kind of games that depends on pure luck will seek it as this game will entertain them.
+- Rock Paper Scissors is an implementation of the popular, time-honored game, "Rock Paper Scissors". People who like this kind of games that depends on pure luck will seek it as this game will entertain them.
 - I developed Rock Paper Scissors as my portfolio project 2 of my full stack software development diploma with the Code Institute in Dublin, Ireland.
 
 ![An image that shows off my website across all different device sizes](assets/images/readme-fit-on-all-screens.png)
@@ -79,3 +79,75 @@
 ![An image of the footer on an iPad](assets/images/readme-footer-ipad.png)
 
 ![An image of the footer on a Galaxy S8+ smartphone](assets/images/readme-footer-galaxy-s8+.png)
+
+# 3. Future features
+
+- Incorportating several difficulty levels into the game.
+- Developing the option of multiplayer; for example, between two users.
+
+# 4. Typography and color scheme
+
+- Three fonts from Google Fonts have been inserted into the style.css file: "Rampart One", "Fredoka", and "sans-serif".
+- Two colors have been applied as font colors: #00008B and #ff4500.
+- Two colors have been applied as background colors: #f0f8ff and #ffffe0.
+- Three emojis from www.emojipedia.org have been utilized as the game buttons: "rock", "paper", and "scissors".
+- Three icons from Font Awesome have been implemented as the social media icons: Facebook, Twitter, and Instagram.
+
+![An image showing the "Rampart One" font from Google Fonts, the font color: #ff4500, and the background color: #ffffe0](assets/images/readme-rampart-one-font.png)
+
+![An image revealing the "Fredoka" font from Google Fonts, the font color: #00008B, and the background color: #f0f8ff](assets/images/readme-fredoka-font.png)
+
+![An image showing the icons of the social media links (from Font Awesome)](assets/images/readme-icons.png)
+
+![An image showing the emojis of the game buttons (from www.emojipedia.org))](assets/images/readme-emojis.png)
+
+# 5. Wireframes
+
+- Only one wireframe has been created.
+- Down is an image of that wireframe thanks to Balsamiq.
+
+![An image showing the wireframe of the game (from Balsamiq))](assets/images/readme-wireframe.png)
+
+# 6. Technology
+
+- ## 6. 1. HTML
+
+  - Using HTML, I created the content of the Rock Paper Scissor's website, made it accessible, and provided the relevant structure for search engine optimization.
+
+- ## 6. 2. CSS
+
+  - I utilized CSS to make the content of this game's website both visually appealing and responsive on different screen sizes of laptops, tabs, and smartphones.
+
+- ## 6. 3. Codeanywhere
+
+  - Codeanywhere is an efficient cloud-based integrated development environment that I employed to write, review, integrate, and deploy the HTML and CSS code of the Rock Paper Scissors website without any need for any installations or configurations.
+
+- ## 6. 4. GitHub
+
+  - A platform for version control and collaborative software development, which I exploited to create a central code repository for and deploy the website of Rock Paper Scissors game project; this, in turn, allows me to keep track of changes made to code and revert to previous versions if needed.
+
+- ## 6. 5. Balsamiq
+
+  - This is the program I applied to generate the framework of the website of the game project.
+
+- ## 6. 6. Google Fonts
+
+  - I resorted to Google Fonts to amplify the look of the Rock Paper Scissors' website, so I integrated two of its fonts into the website by inserting their links in their respective CSS file.
+  - The "sans-serif" font has been integrated into the style.css file as a backup font.
+
+- ## 6. 7. Font Awesome
+
+  - To enhance the visual design of the game's website, I have turned to Font Awesome and incorporated 3 icons into it as the icons of the social media links in the footer.
+
+- ## 6. 8. Emojipeida
+
+  - In order to enable the game buttons to encompass some pragmatic, quite beautiful emojis, I visited www.emojipedia.org and employed 3 of their emojis: "rock", "paper", and "scissors".
+
+- ## 6. 9. W3C HTML and CSS validators
+
+  - There exist two W3C validators: Online tools that check HTML and CSS code.
+  - Exerising both of them, a developer can validate their code by URL, file upload, or direct input.
+  - I have enacted both W3C validators to scrutinize the html and css files of the Rock Paper Scissors' website.
+  - I executed two validation methods: by URL and by direct input.
+  - Putting the validate-by-URL method to use, I have validated index.html file of the game.
+  - Bringing the validate-by-direct-input method, I have validated the style.css file of the game.
