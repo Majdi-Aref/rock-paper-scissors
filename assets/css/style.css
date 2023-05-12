@@ -67,6 +67,10 @@ nav {
     padding: 1rem;
 }
 
+header .title-nav {
+    padding-bottom: 0.5rem;
+}
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -84,7 +88,7 @@ nav a:hover {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 220px) {
+@media screen and (max-width: 240px) {
     nav ul {
         display: initial;
     }
@@ -111,6 +115,12 @@ nav a:hover {
     text-align: center;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 260px) {
+    #scissors-button {
+        margin-top: 0;
+    }
 }
 
 /* Result section styles */
