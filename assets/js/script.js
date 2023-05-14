@@ -50,10 +50,10 @@ function playRound(playerChoice) {
 
     // Check if either player has won 10 rounds
     if (totalPlayerScore === 10) {
-        roundResultText.textContent = `You have won 10 rounds! You are victorious! 🎉 Please press the "Reset & Play Again" button below to start a new game.`;
+        roundResultText.textContent = `You have won 10 rounds! You are victorious! Please press the "Reset & Play Again" button below to start a new game.`;
         gameOver = true;
     } else if (totalComputerScore === 10) {
-        roundResultText.textContent = `The computer has won 10 rounds! The computer is victorious! 🎉 Please press the "Reset & Play Again" button below to start a new game.`;
+        roundResultText.textContent = `The computer has won 10 rounds! The computer is victorious! Please press the "Reset & Play Again" button below to start a new game.`;
         gameOver = true;
     }
 }

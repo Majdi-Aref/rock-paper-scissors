@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-- Rock Paper Scissors is an implementation of the popular, time-honored game, "Rock Paper Scissors". People who like this kind of games that depends on pure luck will seek it as this game will entertain them.
+- Rock Paper Scissors is an implementation of the popular, time-honored game, "Rock Paper Scissors". People who like this kind of games, which depends on pure luck, will seek it as this game will entertain them.
 - I developed Rock Paper Scissors as my portfolio project 2 of my full stack software development diploma with the Code Institute in Dublin, Ireland.
 
 ![An image that shows off my website across all different device sizes](assets/images/readme-fit-on-all-screens.png)

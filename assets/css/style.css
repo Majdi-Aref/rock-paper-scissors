@@ -15,30 +15,30 @@ body {
     background-color: #f0f8ff;
 }
 
-#title {
-    margin: 0.5rem 0.5rem 0;
+.header-styles {
+    background-color: #ffffe0;
 }
 
 h1 {
     font-family: "Rampart One", sans-serif;
     font-size: 2rem;
     color: #ff4500;
+    padding: 1rem;
+    text-align: center;
 }
 
-h1,
-h2,
 h3 {
     text-align: center;
     margin-top: 1rem;
 }
 
-ul {
-    list-style: none;
-}
-
 a {
     color: inherit;
     text-decoration: none;
+}
+
+a:hover {
+    color: #ff4500;
 }
 
 .game-buttons {
@@ -61,36 +61,9 @@ button:hover {
     background-color: #ffffe0;
 }
 
-/* Navigation bars' styles (including a media query for smartphones that are maximally 240 px wide) */
-nav {
-    background-color: #ffffe0;
-    padding: 1rem;
-}
-
-header .title-nav {
-    padding-bottom: 0.5rem;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-nav li {
-    text-align: center;
-}
-
-nav a:hover {
-    color: #ff4500;
-}
-
-.social-media-link {
-    font-size: 1.5rem;
-}
-
 @media screen and (max-width: 240px) {
     nav ul {
-        display: initial;
+        display: ;
     }
 }
 
@@ -99,22 +72,13 @@ nav a:hover {
     text-align: center;
 }
 
-.rules ul {
+p {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
-}
-
-.rules p {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+    text-align: center;
 }
 
 /* Play section's styles (including a media query for smartphones that are maximally 260 px wide)  */
-.message p {
-    text-align: center;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-}
 
 @media screen and (max-width: 260px) {
     #scissors-button {
@@ -125,12 +89,6 @@ nav a:hover {
 /* Result section's styles */
 .outcome-heading {
     margin-top: 0;
-}
-
-.outcome p {
-    text-align: center;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
 }
 
 .outcome span {
@@ -145,4 +103,35 @@ nav a:hover {
     font-size: 1rem;
     color: #ff4500;
     font-family: inherit;
+}
+
+/* footer */
+
+nav {
+    background-color: #ffffe0;
+    padding: 1rem;
+}
+
+/* fixing the footer at the bottom of the webpage because the content of the webpage does not fill the entire viewport */
+.footer-place {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #ffffe0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 1rem;
+}
+
+li {
+    text-align: center;
+}
+
+.social-media-link {
+    font-size: 1.5rem;
 }
