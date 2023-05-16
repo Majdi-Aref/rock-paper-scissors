@@ -15,6 +15,13 @@ body {
     background-color: #f0f8ff;
 }
 
+/* Creating some padding at the bottom of the <main> element to prevent the lower elements from overlapping underneath the footer element when the game is displayed on screens that are maximally 380 px wide. */
+@media screen and (max-width: 380px) {
+    main {
+        padding-bottom: 5rem;
+    }
+}
+
 .header-styles {
     background-color: #ffffe0;
 }
@@ -61,12 +68,6 @@ button:hover {
     background-color: #ffffe0;
 }
 
-@media screen and (max-width: 240px) {
-    nav ul {
-        display: ;
-    }
-}
-
 /* Styling of game rules' section */
 .rules {
     text-align: center;
@@ -79,7 +80,6 @@ p {
 }
 
 /* Play section's styles (including a media query for smartphones that are maximally 260 px wide)  */
-
 @media screen and (max-width: 260px) {
     #scissors-button {
         margin-top: 0;
@@ -103,6 +103,8 @@ p {
     font-size: 1rem;
     color: #ff4500;
     font-family: inherit;
+    margin: 0.5rem;
+    display: none;
 }
 
 /* footer */
@@ -112,7 +114,7 @@ nav {
     padding: 1rem;
 }
 
-/* fixing the footer at the bottom of the webpage because the content of the webpage does not fill the entire viewport */
+/* fixing the footer at the bottom of the webpage to prevent it from sliding upwards. */
 .footer-place {
     position: fixed;
     width: 100%;
