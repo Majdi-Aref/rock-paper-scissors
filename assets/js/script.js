@@ -13,30 +13,53 @@ let gameOver = false;
 /** Function to initialize game buttons
  * 
  * This function appends an event listener to the 3 game buttons (rock, paper, and scissors 
- * buttons); as soon as any of those 3 game buttons is clicked. 
- * Then the function will check if the game is over or not by means of the boolean variable, 
- * gameOver. 
+ * buttons); the event listener will be activated as soon as any of those 3 game buttons 
+ * is clicked. 
+ * Once the event listener is activated, the function will check if the game is over or not 
+ * by means of the boolean variable: gameOver. 
  * If the gameOver varialbe is true, this means that either a player or the computer 
- * has already won the game by winning 10 rounds; 
- * in this case the function will halt until a player presses the "reset and play again" 
- * button" to play a new game. 
- * If gameOver is false, the funciton will proc
+ * has already won the game by winning 10 rounds; in this case the function will halt until 
+ * a player presses the "reset and play again" button" to play a new game. 
+ * If gameOver is false, the funciton will proceed and determine which game button a player 
+ * clicks; after that this function will call the main function of the game, which is: 
+ * playRound().
  * 
- * @param {*} gameButton 
+ * @param {*} gameButton This is the only parameter of this function, which is also a variable.
+ * It is important to know that this parameter will be defined in this function because 
+ * the initializeGame() function will loop through the game buttons' array and call this 
+ * function on each gamebutton.
+ * 
  */
 function initializeGameButtons(gameButton) {
     gameButton.addEventListener("click", function () {
         if (gameOver === false) {
-            const playerChoice = gameButton.dataset.choice;
+            let playerChoice = gameButton.dataset.choice;
             playRound(playerChoice);
         }
     });
 }
 
+/** Function to get a computer's choice
+ * 
+ * This function will determine which game button the computer chooses in a 
+ * game's round.
+ * In this function, the computer choice is 100% unbiased.
+ * @returns At the end of this function, a computer' choice will be retured because it
+ * must be used outside this function's scope.
+ */
+
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random() * 3)];
 }
+
+/** Function to determine who wins a game's round
+ * 
+ * 
+ * @param {*} playerChoice 
+ * @param {*} computerChoice 
+ * @returns 
+ */
 
 function determineWinner(playerChoice, computerChoice) {
     let result;
