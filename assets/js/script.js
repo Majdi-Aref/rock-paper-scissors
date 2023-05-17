@@ -2,6 +2,7 @@
 let gameButtons = document.querySelectorAll(".game-button");
 let resetButton = document.querySelector("#reset-button");
 let roundResultText = document.querySelector("#round-result-text");
+let finalResultText = document.querySelector("#final-result-text");
 let playerScore = document.querySelector("#player-score");
 let computerScore = document.querySelector("#computer-score");
 
@@ -10,25 +11,11 @@ let totalPlayerScore = 0;
 let totalComputerScore = 0;
 let gameOver = false;
 
-/** Function to initialize game buttons
- * 
- * This function appends an event listener to the 3 game buttons (rock, paper, and scissors 
- * buttons); the event listener will be activated as soon as any of those 3 game buttons 
- * is clicked. 
- * Once the event listener is activated, the function will check if the game is over or not 
- * by means of the boolean variable: gameOver. 
- * If the gameOver varialbe is true, this means that either a player or the computer 
- * has already won the game by winning 10 rounds; in this case the function will halt until 
- * a player presses the "reset and play again" button" to play a new game. 
- * If gameOver is false, the funciton will proceed and determine which game button a player 
- * clicks; after that this function will call the main function of the game, which is: 
- * playRound().
- * 
- * @param {*} gameButton This is the only parameter of this function, which is also a variable.
- * It is important to know that this parameter will be defined in this function because 
- * the initializeGame() function will loop through the game buttons' array and call this 
- * function on each gamebutton.
- * 
+/** 
+ * Function to initialize game buttons
+ * @param {*} gameButton As the function initializeGame() below calls this 
+ * function, this parameter (gameButton) will be defined and passed to this 
+ * function.
  */
 function initializeGameButtons(gameButton) {
     gameButton.addEventListener("click", function () {
@@ -39,29 +26,40 @@ function initializeGameButtons(gameButton) {
     });
 }
 
-/** Function to get a computer's choice
- * 
- * This function will determine which game button the computer chooses in a 
- * game's round.
- * In this function, the computer choice is 100% unbiased.
- * @returns At the end of this function, a computer' choice will be retured because it
- * must be used outside this function's scope.
+/**
+ * Function to play a game's round.
+ * This function is the main function of the game and calls 5 functions.
+ * @param {*} playerChoice This parameter is defined in this function because
+ * it is already declared and passed to this function in the last function: 
+ * initializeGameButtons(gameButton).
  */
+function playRound(playerChoice) {
+    let computerChoice = getComputerChoice();
+    let result = determineRoundResult(playerChoice, computerChoice);
+    updateRoundResultText(playerChoice, computerChoice, result);
+    updateScores(result);
+    announceWinner ();
+    checkGameOver();
+}
 
+/** 
+ * Function to get a computer's choice
+ * In this function, the computer choice is 100% unbiased.
+ * @returns At the end of this function, a computer' choice will be retured 
+ * because it must be used outside this function's scope.
+ */
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random() * 3)];
 }
 
-/** Function to determine who wins a game's round
- * 
- * 
+/** Function to determine the result of a game's round
  * @param {*} playerChoice 
  * @param {*} computerChoice 
- * @returns 
+ * @returns This is because the "result" variable must be used outside this 
+ * function.
  */
-
-function determineWinner(playerChoice, computerChoice) {
+function determineRoundResult(playerChoice, computerChoice) {
     let result;
     if (computerChoice === playerChoice) {
         result = "Tie";
@@ -69,57 +67,90 @@ function determineWinner(playerChoice, computerChoice) {
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")
-    ) {
-        totalPlayerScore++;
-        result = "You win!";
+    ) { 
+        result = "You have won this round.";
     } else {
-        totalComputerScore++;
-        result = "Computer wins!";
+        result = "The computer has won this round.";
     }
     return result;
 }
 
+/**
+ * Function to update the text message of the result of a game's round
+ * @param {*} playerChoice 
+ * @param {*} computerChoice 
+ * @param {*} result
+ */
 function updateRoundResultText(playerChoice, computerChoice, result) {
     roundResultText.textContent = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
 }
 
-function updateScores() {
-    playerScore.textContent = totalPlayerScore;
-    computerScore.textContent = totalComputerScore;
+/**
+ * Function to update the player's score and the computer's score
+ * @param {*} result
+ */
+function updateScores (result) {
+    if (result === "You have won this round.") {
+        totalPlayerScore++;
+        playerScore.textContent = totalPlayerScore;
+    }
+    if (result === "The computer has won this round.") {
+        totalComputerScore++;
+        computerScore.textContent = totalComputerScore;
+    }
 }
 
+/**
+ * Function to announce the winner of the game
+ */
+function announceWinner () {
+    if (totalPlayerScore === 10) {
+        finalResultText.textContent = `You have won the game! Please press the "Reset & Play Again" button below to start a new game.`;
+    }
+    else if (totalComputerScore === 10) {
+        finalResultText.textContent = `The computer has won the game! Please press the "Reset & Play Again" button below to start a new game.`;
+    }
+}
+
+/**
+ * Function to check if the game is over
+ * The "Reset and play again" button is already hidden by means of a CSS rule.
+ * If the game is over, the function "initializeGameButtons" will not proceed 
+ * and the "Reset and play again" button will appear.
+ */
 function checkGameOver() {
     if (totalPlayerScore === 10) {
-        roundResultText.textContent = `You have won 10 rounds, you are victorious! Please press the "Reset & Play Again" button below to start a new game.`;
         gameOver = true;
         resetButton.style.display = "initial";
     } else if (totalComputerScore === 10) {
-        roundResultText.textContent = `The computer has won 10 rounds, the computer is victorious! Please press the "Reset & Play Again" button below to start a new game.`;
         gameOver = true;
         resetButton.style.display = "initial";
     }
 }
 
-function playRound(playerChoice) {
-    let computerChoice = getComputerChoice();
-    let result = determineWinner(playerChoice, computerChoice);
-    updateRoundResultText(playerChoice, computerChoice, result);
-    updateScores();
-    checkGameOver();
-}
-
-// Function to reset the game 
+/**
+ * Function to reset the game
+ * This will reset all scores to zero and all texts to empty.
+ * The "Reset and play again" button will be hidden.
+ * The gameOver variable will be set to "false", which will re-activate the 
+ * function "initializeGameButtons(gameButton)".
+ */
 function resetGame() {
     totalPlayerScore = 0;
     playerScore.textContent = totalPlayerScore;
     totalComputerScore = 0;
     computerScore.textContent = totalComputerScore;
     roundResultText.textContent = "";
+    finalResultText.textContent = "";
     gameOver = false;
     resetButton.style.display = "none";
 }
 
-// Function to start a game 
+/**
+ * Function to start a game
+ * This function calls two functions: initializeGameButtons(button) and 
+ * resetGame()
+ */
 function initializeGame() {
     gameButtons.forEach(initializeGameButtons);
     resetButton.addEventListener("click", resetGame);
