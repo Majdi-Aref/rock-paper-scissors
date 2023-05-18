@@ -197,6 +197,13 @@
 
 # 8. Test Cases
 
+- ## 8. 1. Testing the "Rock" Button
+  - Test description: This test checks the functionality of the "Rock" button.
+  - Steps:
+    - Click on the "Rock" button.
+  - Expected Result: Clicking on the "Rock" button would make a message in the "Round result" paragraph appear, which 
+  - Actual Result: The Rock Paper Scissors' page on Facebook was opened in a new tab for the user.
+
 - ## 8. 1. Testing the link to the Rock Paper Scissors' page on Facebook in the footer
 
   - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Facebook in the footer.
