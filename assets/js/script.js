@@ -156,6 +156,10 @@ function initializeGame() {
     resetButton.addEventListener("click", resetGame);
 }
 
+/**
+ * Calling the function initializeGame() only when the DOM content is fully 
+ * loaded.
+ */
 window.addEventListener("DOMContentLoaded", initializeGame);
 
 
