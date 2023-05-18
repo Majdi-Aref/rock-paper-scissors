@@ -169,7 +169,7 @@
 
 ## 6. 4. Codeanywhere
 
-- Codeanywhere is an efficient cloud-based integrated development environment that I employed to write, review, integrate, and deploy the HTML and CSS code of the Rock Paper Scissors website without any need for any installations or configurations.
+- Codeanywhere is an efficient cloud-based integrated development environment that I employed to write, review, integrate, and deploy the code of the Rock Paper Scissors website without any need for any installations or configurations.
 
 ## 6. 5. GitHub
 
@@ -197,9 +197,7 @@
 - There exist two W3C validators: Online tools that check HTML and CSS code.
 - Exercising both of them, a developer can validate their code by URL, file upload, or direct input.
 - I have enacted both W3C validators to scrutinize the html and css files of the Rock Paper Scissors' website.
-- I executed two validation methods: by URL and by direct input.
-- By putting the validate-by-URL method to use, I have validated index.html file of the game.
-- By bringing the validate-by-direct-input method into play, I have validated the style.css file of the game.
+- I executed only one validation method: by direct input.
 
 ## 6. 11. JSHint
 
@@ -341,7 +339,7 @@
 
 - Applying media queries, I developed the Rock Paper Scissors' website to fit Laptops', tabs', and smartphones' screen sizes.
 - The browser that I put to use is Google Chrome.
-- Please have a look at the images below; they successively show how the game's page simulates on smartphones, tabs, and laptops.
+- Please have a look at the images below; they successively show how the game's page simulates on laptops, tabs, and smartphones.
 
 ![An image of the game on an ASUS VIVO laptop](assets/images/readme-laptop.png)
 
