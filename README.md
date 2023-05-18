@@ -15,14 +15,15 @@
 - [6. Technology](#6-technology)
   - [6. 1. HTML](#6-1-html)
   - [6. 2. CSS](#6-2-css)
-  - [6. 3. Codeanywhere](#6-3-codeanywhere)
-  - [6. 4. GitHub](#6-4-github)
-  - [6. 5. Balsamiq](#6-5-balsamiq)
-  - [6. 6. Google Fonts](#6-6-google-fonts)
-  - [6. 7. Font Awesome](#6-7-font-awesome)
-  - [6. 8. Emojipedia](#6-8-emojipedia)
-  - [6. 9. W3C HTML \& CSS Validators](#6-9-w3c-html--css-validators)
-  - [6. 10. JSHint](#6-10-jshint)
+  - [6. 3. JavaScript](#6-3-javascript)
+  - [6. 4. Codeanywhere](#6-4-codeanywhere)
+  - [6. 5. GitHub](#6-5-github)
+  - [6. 6. Balsamiq](#6-6-balsamiq)
+  - [6. 7. Google Fonts](#6-7-google-fonts)
+  - [6. 8. Font Awesome](#6-8-font-awesome)
+  - [6. 9. Emojipedia](#6-9-emojipedia)
+  - [6. 10. W3C HTML \& CSS Validators](#6-10-w3c-html--css-validators)
+  - [6. 11. JSHint](#6-11-jshint)
 - [7. Code Validation](#7-code-validation)
   - [7. 1. index.html File](#7-1-indexhtml-file)
   - [7. 2. style.css File](#7-2-stylecss-file)
@@ -161,32 +162,37 @@
 
 - I utilized CSS to make the content of this game's website both visually appealing and responsive on different screen sizes of laptops, tabs, and smartphones.
 
-## 6. 3. Codeanywhere
+## 6. 3. JavaScript
+
+- In order to create the logic of the game, I exploited JavaScript, especially its functions.
+- I stored the JavaScipt logic of the game in a script.js file.
+
+## 6. 4. Codeanywhere
 
 - Codeanywhere is an efficient cloud-based integrated development environment that I employed to write, review, integrate, and deploy the HTML and CSS code of the Rock Paper Scissors website without any need for any installations or configurations.
 
-## 6. 4. GitHub
+## 6. 5. GitHub
 
 - A platform for version control and collaborative software development, which I exploited to create a central code repository for and deploy the website of Rock Paper Scissors game project; this, in turn, allows me to keep track of changes made to code and revert to previous versions if needed.
 
-## 6. 5. Balsamiq
+## 6. 6. Balsamiq
 
 - This is the program I applied to generate the framework of the website of the game project.
 
-## 6. 6. Google Fonts
+## 6. 7. Google Fonts
 
 - I resorted to Google Fonts to amplify the look of the Rock Paper Scissors' website, so I integrated two of its fonts into the website by inserting their links in their respective CSS file.
 - The "sans-serif" font has been integrated into the style.css file as a backup font.
 
-## 6. 7. Font Awesome
+## 6. 8. Font Awesome
 
 - To enhance the visual design of the game's website, I have turned to Font Awesome and incorporated 3 icons into it as the icons of the social media links in the footer.
 
-## 6. 8. Emojipedia
+## 6. 9. Emojipedia
 
 - In order to enable the game buttons to encompass some pragmatic, quite beautiful emojis, I visited www.emojipedia.org and employed 3 of their emojis: "rock", "paper", and "scissors".
 
-## 6. 9. W3C HTML & CSS Validators
+## 6. 10. W3C HTML & CSS Validators
 
 - There exist two W3C validators: Online tools that check HTML and CSS code.
 - Exercising both of them, a developer can validate their code by URL, file upload, or direct input.
@@ -195,7 +201,7 @@
 - By putting the validate-by-URL method to use, I have validated index.html file of the game.
 - By bringing the validate-by-direct-input method into play, I have validated the style.css file of the game.
 
-## 6. 10. JSHint
+## 6. 11. JSHint
 
 - JSHint is an online website that scrutinizes and validates JavaScript code.
 - Through direct input, I made use of JSHint to check and validate the script.js file of Rock Paper Scissors.
