@@ -198,13 +198,67 @@
 # 8. Test Cases
 
 - ## 8. 1. Testing the "Rock" Button
+
   - Test description: This test checks the functionality of the "Rock" button.
   - Steps:
     - Click on the "Rock" button.
-  - Expected Result: Clicking on the "Rock" button would make a message in the "Round result" paragraph appear, which 
-  - Actual Result: The Rock Paper Scissors' page on Facebook was opened in a new tab for the user.
+  - Expected Results:
+    - Clicking on the "Rock" button would make a message in the "Round result" paragraph appear, which would establish which the result of a game's round is (tie, a player wins, or the computer wins).
+    - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
+    - When a player or the computer wins 10 rounds, the "Reset and Play Again" button would come into sight and a messege would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
+  - Actual Result: The actual result is identical to the expected result.
+  - 2 images below registered that the "Rock" button is fully functional.
 
-- ## 8. 1. Testing the link to the Rock Paper Scissors' page on Facebook in the footer
+![Image 1 documenting the functionality of the "Rock" button](assets/images/readme-testing-rock-button.png)
+
+![Image 2 documenting the functionality of the "Rock" button](assets/images/readme-testing-rock-button-2.png)
+
+- ## 8. 2. Testing the "Paper" Button
+
+  - Test description: This test checks the functionality of the "Paper" button.
+  - Steps:
+    - Click on the "Paper" button.
+  - Expected Results:
+    - Clicking on the "Paper" button would make a message in the "Round result" paragraph appear, which would establish which the result of a game's round is (tie, a player wins, or the computer wins).
+    - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
+    - When a player or the computer wins 10 rounds, the "Reset and Play Again" button would come into sight and a messege would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
+  - Actual Result: The actual result is identical to the expected result.
+  - 2 images below registered that the "Paper" button is fully functional.
+
+![Image 1 documenting the functionality of the "Paper" button](assets/images/readme-testing-paper-button.png)
+
+![Image 2 documenting the functionality of the "Paper" button](assets/images/readme-testing-paper-button-2.png)
+
+- ## 8. 3. Testing the "Scissors" Button
+
+  - Test description: This test checks the functionality of the "Scissors" button.
+  - Steps:
+    - Click on the "Scissors" button.
+  - Expected Results:
+    - Clicking on the "Scissors" button would make a message in the "Round result" paragraph appear, which would establish which the result of a game's round is (tie, a player wins, or the computer wins).
+    - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
+    - When a player or the computer wins 10 rounds, the "Reset and Play Again" button would come into sight and a messege would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
+  - Actual Result: The actual result is identical to the expected result.
+  - 2 images below registered that the "Scissors" button is fully functional.
+
+![Image 1 documenting the functionality of the "Scissors" button](assets/images/readme-testing-scissors-button.png)
+
+![Image 2 documenting the functionality of the "Scissors" button](assets/images/readme-testing-scissors-button-2.png)
+
+- ## 8. 4. Testing the "Reset and Play Again" Button
+
+  - Test description: This test checks the functionality of the "Reset and Play Again" button.
+  - Steps:
+    - Click on the "Reset and Play Again" button.
+  - Expected Result: Clicking on the "Reset and Play Again" button would empty the round result's message and the final result's message, would reset a player's score and the computer's score, and would hide the "Reset and Play Again" button.
+  - Actual Result: The actual result is identical to the expected result.
+  - 2 images beneath registered that the "Reset and Play Again" button is fully functional.
+
+![Image 1 documenting the functionality of the "Reset and Play Again" button before clicking this button](assets/images/readme-testing-reset-button-before.png)
+
+![Image 2 documenting the functionality of the "Reset and Play Again" button after clicking this button](assets/images/readme-testing-reset-button-after.png)
+
+- ## 8. 5. Testing the link to the Rock Paper Scissors' page on Facebook in the footer
 
   - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Facebook in the footer.
   - Steps:
@@ -212,7 +266,7 @@
   - Expected Result: The Rock Paper Scissors' page on Facebook should be opened in a new tab for the user.
   - Actual Result: The Rock Paper Scissors' page on Facebook was opened in a new tab for the user.
 
-- ## 8. 2. Testing the link to the Rock Paper Scissors' page on Instagram in the footer
+- ## 8. 6. Testing the link to the Rock Paper Scissors' page on Instagram in the footer
 
   - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Instagram in the footer.
   - Steps:
@@ -220,7 +274,7 @@
   - Expected Result: The Rock Paper Scissors' page on Instagram should be opened in a new tab for the user.
   - Actual Result: The Rock Paper Scissors' page on Instagram was opened in a new tab for the user.
 
-- ## 8. 3. Testing the link to the Rock Paper Scissors' page on Twitter in the footer
+- ## 8. 7. Testing the link to the Rock Paper Scissors' page on Twitter in the footer
 
   - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Twitter in the footer.
   - Steps:
@@ -230,7 +284,7 @@
 
 # 9. Fixed Bugs
 
-- I have not encountered any bugs in the game.
+- I have not encountered any bugs on the game.
 
 # 10. Supported Screens & Browsers
 
