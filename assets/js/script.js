@@ -54,8 +54,8 @@ function getComputerChoice() {
 }
 
 /** Function to determine the result of a game's round
- * @param {*} playerChoice 
- * @param {*} computerChoice 
+ * @param {string} playerChoice 
+ * @param {string} computerChoice 
  * @returns This is because the "result" variable must be used outside this 
  * function.
  */
@@ -77,9 +77,9 @@ function determineRoundResult(playerChoice, computerChoice) {
 
 /**
  * Function to update the text message of the result of a game's round
- * @param {*} playerChoice 
- * @param {*} computerChoice 
- * @param {*} result
+ * @param {string} playerChoice 
+ * @param {string} computerChoice 
+ * @param {string} result
  */
 function updateRoundResultText(playerChoice, computerChoice, result) {
     roundResultText.textContent = `You chose ${playerChoice}, the computer chose ${computerChoice}; ${result}`;
@@ -87,7 +87,7 @@ function updateRoundResultText(playerChoice, computerChoice, result) {
 
 /**
  * Function to update the player's score and the computer's score
- * @param {*} result
+ * @param {string} result
  */
 function updateScores(result) {
     if (result === "You won this round.") {
@@ -115,8 +115,9 @@ function announceWinner() {
 /**
  * Function to check if the game is over
  * The "Reset and play again" button is already hidden by means of a CSS rule.
- * If the game is over, the function "initializeGameButtons" will not proceed 
- * and the "Reset and play again" button will appear.
+ * If the game is over, the function "initializeGameButtons" will not proceed, 
+ * the game buttons will be disabled, and the "Reset and play again" button 
+ * will appear.
  */
 function checkGameOver() {
     if (

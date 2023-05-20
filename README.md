@@ -54,6 +54,8 @@
 # 1. User Stories
 
 - As a visiting user, I would like to know the rules of the "Rock Paper Scissors" game and to play it.
+- While playing, I, as a visiting user, would like to be view my scores and the computer's.
+- As soon as either I or the computer wins a game, I, as a visiting user, would like to be able to reset the game.
 
 # 2. Existing Features
 
