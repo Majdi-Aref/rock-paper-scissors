@@ -33,10 +33,11 @@
   - [8. 1. Testing the "Rock" Button](#8-1-testing-the-rock-button)
   - [8. 2. Testing the "Paper" Button](#8-2-testing-the-paper-button)
   - [8. 3. Testing the "Scissors" Button](#8-3-testing-the-scissors-button)
-  - [8. 4. Testing the "Reset and Play Again" Button](#8-4-testing-the-reset-and-play-again-button)
-  - [8. 5. Testing the link to the Rock Paper Scissors' page on Facebook in the footer](#8-5-testing-the-link-to-the-rock-paper-scissors-page-on-facebook-in-the-footer)
-  - [8. 6. Testing the link to the Rock Paper Scissors' page on Instagram in the footer](#8-6-testing-the-link-to-the-rock-paper-scissors-page-on-instagram-in-the-footer)
-  - [8. 7. Testing the link to the Rock Paper Scissors' page on Twitter in the footer](#8-7-testing-the-link-to-the-rock-paper-scissors-page-on-twitter-in-the-footer)
+  - [8. 4. Testing the function that disables the game buttons as a player of the computer wins a game](#8-4-testing-the-function-that-disables-the-game-buttons-as-a-player-of-the-computer-wins-a-game)
+  - [8. 5. Testing the "Reset and Play Again" Button](#8-5-testing-the-reset-and-play-again-button)
+  - [8. 6. Testing the link to the Rock Paper Scissors' page on Facebook in the footer](#8-6-testing-the-link-to-the-rock-paper-scissors-page-on-facebook-in-the-footer)
+  - [8. 7. Testing the link to the Rock Paper Scissors' page on Instagram in the footer](#8-7-testing-the-link-to-the-rock-paper-scissors-page-on-instagram-in-the-footer)
+  - [8. 8. Testing the link to the Rock Paper Scissors' page on Twitter in the footer](#8-8-testing-the-link-to-the-rock-paper-scissors-page-on-twitter-in-the-footer)
 - [9. Fixed Bugs](#9-fixed-bugs)
 - [10. Supported Screens \& Browsers](#10-supported-screens--browsers)
 - [11. Deployment](#11-deployment)
@@ -49,7 +50,7 @@
 - "Rock Paper Scissors" is an implementation of the popular, time-honored game, "Rock Paper Scissors". People who like this kind of game, which depends on pure luck, will seek it as this game will entertain them.
 - I developed Rock Paper Scissors as my Portfolio Project 2 for my full stack software development diploma with the Code Institute in Dublin, Ireland.
 
-![An image that shows off my website across all different device sizes](assets/images/readme-responsive-on-all-screens.png)
+![An image that shows off my website across all different device sizes](readme-images/responsive-on-all-screens.png)
 
 # 1. User Stories
 
@@ -63,11 +64,11 @@
 
 - Please find below images of the logo on different screen sizes.
 
-![An image of the logo on an ASUS VIVO laptop](assets/images/readme-logo-laptop.png)
+![An image of the logo on an ASUS VIVO laptop](readme-images/logo-laptop.png)
 
-![An image of the navigation bars on an iPad](assets/images/readme-logo-ipad.png)
+![An image of the navigation bars on an iPad](readme-images/logo-ipad.png)
 
-![An image of the navigation bars on a Galaxy S8+ smartphone](assets/images/readme-logo-galaxy-s8+.png)
+![An image of the navigation bars on a Galaxy S8+ smartphone](readme-images/logo-galaxy-s8+.png)
 
 ## 2. 2. Rules Section
 
@@ -75,11 +76,11 @@
 - Whoever wins 10 rounds wins the game.
 - Beneath are images of the rules section.
 
-![An image of the rules section on an ASUS VIVO laptop](assets/images/readme-rules-laptop.png)
+![An image of the rules section on an ASUS VIVO laptop](readme-images/rules-laptop.png)
 
-![An image of the rules section on an iPad](assets/images/readme-rules-ipad.png)
+![An image of the rules section on an iPad](readme-images/rules-ipad.png)
 
-![An image of the rules section on a Galaxy S8+ smartphone](assets/images/readme-rules-galaxy-s8+.png)
+![An image of the rules section on a Galaxy S8+ smartphone](readme-images/rules-galaxy-s8+.png)
 
 ## 2. 3. Play Section
 
@@ -89,11 +90,11 @@
 - The game rules dictate who wins a round of the game.
 - Further down are images of the play section.
 
-![An image of the play section on an ASUS Vivo laptop](assets/images/readme-play-section-laptop.png)
+![An image of the play section on an ASUS Vivo laptop](readme-images/play-section-laptop.png)
 
-![An image of the play section on an iPad](assets/images/readme-play-section-ipad.png)
+![An image of the play section on an iPad](readme-images/play-section-ipad.png)
 
-![An image of the play section on a Galaxy S8+ smartphone](assets/images/readme-play-section-galaxy-s8+.png)
+![An image of the play section on a Galaxy S8+ smartphone](readme-images/play-section-galaxy-s8+.png)
 
 ## 2. 4. Outcome Section
 
@@ -104,11 +105,11 @@
 - As soon as a user or the computer has won 10 rounds, the final result paragraph will broadcast that, articulate the winner of a game, and stir a user up to click on the "Reset & Play Again" button, which is both found and accentuated at the bottom of the outcome section, to have a go at a new game.
 - Please view the images of the outcome section below.
 
-![An image of the outcome section on an Asus Vivo laptop](assets/images/readme-result-laptop.png)
+![An image of the outcome section on an Asus Vivo laptop](readme-images/result-laptop.png)
 
-![An image of the outcome section on an iPad](assets/images/readme-result-ipad.png)
+![An image of the outcome section on an iPad](readme-images/result-ipad.png)
 
-![An image of the outcome section a Galaxy S8+ smartphone](assets/images/readme-result-galaxy-s8+.png)
+![An image of the outcome section a Galaxy S8+ smartphone](readme-images/result-galaxy-s8+.png)
 
 ## 2. 5. Footer
 
@@ -120,11 +121,11 @@
 - A user will treasure the footer, because it facilitates getting connected by way of the social media links of the game.
 - Please take a look at some of the relevant images further down.
 
-![An image of the footer on an ASUS Vivo laptop](assets/images/readme-footer-laptop.png)
+![An image of the footer on an ASUS Vivo laptop](readme-images/footer-laptop.png)
 
-![An image of the footer on an iPad](assets/images/readme-footer-ipad.png)
+![An image of the footer on an iPad](readme-images/footer-ipad.png)
 
-![An image of the footer on a Galaxy S8+ smartphone](assets/images/readme-footer-galaxy-s8+.png)
+![An image of the footer on a Galaxy S8+ smartphone](readme-images/footer-galaxy-s8+.png)
 
 # 3. Future Features
 
@@ -139,20 +140,20 @@
 - Three emojis from www.emojipedia.org have been utilized as the game buttons: "rock", "paper", and "scissors".
 - Three icons from Font Awesome have been implemented as the social media icons: Facebook, Twitter, and Instagram.
 
-![An image showing the "Rampart One" font from Google Fonts, the font color: #ff4500, and the background color: #ffffe0](assets/images/readme-rampart-one-font.png)
+![An image showing the "Rampart One" font from Google Fonts, the font color: #ff4500, and the background color: #ffffe0](readme-images/rampart-one-font.png)
 
-![An image revealing the "Fredoka" font from Google Fonts, the font color: #00008B, and the background color: #f0f8ff](assets/images/readme-fredoka-font.png)
+![An image revealing the "Fredoka" font from Google Fonts, the font color: #00008B, and the background color: #f0f8ff](readme-images/fredoka-font.png)
 
-![An image showing the icons of the social media links (from Font Awesome)](assets/images/readme-icons.png)
+![An image showing the icons of the social media links (from Font Awesome)](readme-images/icons.png)
 
-![An image showing the emojis of the game buttons (from www.emojipedia.org))](assets/images/readme-emojis.png)
+![An image showing the emojis of the game buttons (from www.emojipedia.org))](readme-images/emojis.png)
 
 # 5. Wireframes
 
 - Only one wireframe has been created.
 - Down is an image of that wireframe thanks to Balsamiq.
 
-![An image showing the wireframe of the game (from Balsamiq))](assets/images/readme-wireframe.png)
+![An image showing the wireframe of the game (from Balsamiq))](readme-images/wireframe.png)
 
 # 6. Technology
 
@@ -213,9 +214,9 @@
 - Using the W3C HTML validator, I checked the index.html file. No errors or warnings were shown.
 - Below are 2 screenshots that document this validation.
 
-![Image 1 of the validation of the index.html file](assets/images/readme-code-validation-html-1.png)
+![Image 1 of the validation of the index.html file](readme-images/code-validation-html-1.png)
 
-![Image 2 of the validation of the index.html file](assets/images/readme-code-validation-html-2.png)
+![Image 2 of the validation of the index.html file](readme-images/code-validation-html-2.png)
 
 ## 7. 2. style.css File
 
@@ -223,28 +224,28 @@
 - However, one warning was recorded: "Imported style sheets are not checked in direct input and file upload modes".
 - I took 2 screenshots of the CSS validation result, please have a look at them lower down.
 
-![Image 1 of the validation of the style.css file](assets/images/readme-code-validation-css-1.png)
+![Image 1 of the validation of the style.css file](readme-images/code-validation-css-1.png)
 
-![Image 1 of the validation of the style.css file](assets/images/readme-code-validation-css-2.png)
+![Image 1 of the validation of the style.css file](readme-images/code-validation-css-2.png)
 
 ## 7. 3. script.js File
 
 - Taking advantage of JSHint, I validated the script.js file of the game; 17 warnings were issued.
 - Kindly inspect the 4 images of this validation further down.
 
-![Image 1 of the validation of the script.js file](assets/images/readme-code-validation-js-1.png)
+![Image 1 of the validation of the script.js file](readme-images/code-validation-js-1.png)
 
-![Image 2 of the validation of the script.js file](assets/images/readme-code-validation-js-2.png)
+![Image 2 of the validation of the script.js file](readme-images/code-validation-js-2.png)
 
-![Image 3 of the validation of the script.js file](assets/images/readme-code-validation-js-3.png)
+![Image 3 of the validation of the script.js file](readme-images/code-validation-js-3.png)
 
-![Image 4 of the validation of the script.js file](assets/images/readme-code-validation-js-4.png)
+![Image 4 of the validation of the script.js file](readme-images/code-validation-js-4.png)
 
 ## 7. 4. Google Lighthouse Report
 
 - Please have a look at the relevant image further down.
 
-![An image of Google Lighthouse report of the game](assets/images/readme-lighthouse-report-1.png)
+![An image of Google Lighthouse report of the game](readme-images/lighthouse-report-1.png)
 
 # 8. Test Cases
 
@@ -256,13 +257,13 @@
 - Expected Results:
   - Clicking on the "Rock" button would make a message appear in the "Round result" paragraph; this message would establish the result of a game's round (tie, a player wins, or the computer wins).
   - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
-  - When a player or the computer wins 10 rounds, the "Reset and Play Again" button would come into sight and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
+  - When a player or the computer wins 10 rounds, the game buttons would be disabled, the "Reset and Play Again" button would come into sight, and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
 - Actual Result: The actual result is identical to the expected result.
 - Two images below registered that the "Rock" button is fully functional.
 
-![Image 1 documenting the functionality of the "Rock" button](assets/images/readme-testing-rock-button.png)
+![Image 1 documenting the functionality of the "Rock" button](readme-images/testing-rock-button-1.png)
 
-![Image 2 documenting the functionality of the "Rock" button](assets/images/readme-testing-rock-button-2.png)
+![Image 2 documenting the functionality of the "Rock" button](readme-images/testing-rock-button-2.png)
 
 ## 8. 2. Testing the "Paper" Button
 
@@ -272,13 +273,13 @@
 - Expected Results:
   - Clicking on the "Paper" button would make a message in the "Round result" paragraph appear, which would establish the result of a game's round (tie, a player wins, or the computer wins).
   - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
-  - When a player or the computer wins 10 rounds, the "Reset and Play Again" button would come into sight and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
+  - When a player or the computer wins 10 rounds, the game buttons would be disabled, the "Reset and Play Again" button would come into sight, and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
 - Actual Result: The actual result is identical to the expected result.
 - Two images below registered that the "Paper" button is fully functional.
 
-![Image 1 documenting the functionality of the "Paper" button](assets/images/readme-testing-paper-button.png)
+![Image 1 documenting the functionality of the "Paper" button](readme-images/testing-paper-button-1.png)
 
-![Image 2 documenting the functionality of the "Paper" button](assets/images/readme-testing-paper-button-2.png)
+![Image 2 documenting the functionality of the "Paper" button](readme-images/testing-paper-button-2.png)
 
 ## 8. 3. Testing the "Scissors" Button
 
@@ -288,15 +289,26 @@
 - Expected Results:
   - Clicking on the "Scissors" button would make a message in the "Round result" paragraph appear, which would establish the result of a game's round (tie, a player wins, or the computer wins).
   - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
-  - When a player or the computer wins 10 rounds, the "Reset and Play Again" button would come into sight and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
+  - When a player or the computer wins 10 rounds, the game buttons would be disabled, the "Reset and Play Again" button would come into sight, and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
 - Actual Result: The actual result is identical to the expected result.
 - Two images below registered that the "Scissors" button is fully functional.
 
-![Image 1 documenting the functionality of the "Scissors" button](assets/images/readme-testing-scissors-button.png)
+![Image 1 documenting the functionality of the "Scissors" button](readme-images/testing-scissors-button-1.png)
 
-![Image 2 documenting the functionality of the "Scissors" button](assets/images/readme-testing-scissors-button-2.png)
+![Image 2 documenting the functionality of the "Scissors" button](readme-images/testing-scissors-button-2.png)
 
-## 8. 4. Testing the "Reset and Play Again" Button
+## 8. 4. Testing the function that disables the game buttons as a player of the computer wins a game
+
+- Test description: This test makes sure that the game buttons are disabled as a player or the computer wins a game.
+- Steps:
+  - Click on the game buttons repeatedly until a player or the computer wins a game.
+- Expected Results: As soon as a player or the computer wins a game, all three game buttons will be disabled at the same time.
+- Actual Result: The actual result is identical to the expected result.
+- An image beneath registered that the game buttons are disabled as a player or the computer wins a game.
+
+![An image documenting that the game buttons are disabled as a player or the computer wins a game](readme-images/buttons-disabled.png)
+
+## 8. 5. Testing the "Reset and Play Again" Button
 
 - Test description: This test checks the functionality of the "Reset and Play Again" button.
 - Steps:
@@ -305,11 +317,11 @@
 - Actual Result: The actual result is identical to the expected result.
 - Two images beneath registered that the "Reset and Play Again" button is fully functional.
 
-![Image 1 documenting the functionality of the "Reset and Play Again" button before clicking this button](assets/images/readme-testing-reset-button-before.png)
+![Image 1 documenting the functionality of the "Reset and Play Again" button before clicking this button](readme-images/testing-reset-button-before.png)
 
-![Image 2 documenting the functionality of the "Reset and Play Again" button after clicking this button](assets/images/readme-testing-reset-button-after.png)
+![Image 2 documenting the functionality of the "Reset and Play Again" button after clicking this button](readme-images/testing-reset-button-after.png)
 
-## 8. 5. Testing the link to the Rock Paper Scissors' page on Facebook in the footer
+## 8. 6. Testing the link to the Rock Paper Scissors' page on Facebook in the footer
 
 - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Facebook in the footer.
 - Steps:
@@ -317,7 +329,7 @@
 - Expected Result: The Rock Paper Scissors' page on Facebook should be opened in a new tab for the user.
 - Actual Result: The Rock Paper Scissors' page on Facebook was opened in a new tab for the user.
 
-## 8. 6. Testing the link to the Rock Paper Scissors' page on Instagram in the footer
+## 8. 7. Testing the link to the Rock Paper Scissors' page on Instagram in the footer
 
 - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Instagram in the footer.
 - Steps:
@@ -325,7 +337,7 @@
 - Expected Result: The Rock Paper Scissors' page on Instagram should be opened in a new tab for the user.
 - Actual Result: The Rock Paper Scissors' page on Instagram was opened in a new tab for the user.
 
-## 8. 7. Testing the link to the Rock Paper Scissors' page on Twitter in the footer
+## 8. 8. Testing the link to the Rock Paper Scissors' page on Twitter in the footer
 
 - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Twitter in the footer.
 - Steps:
@@ -343,11 +355,11 @@
 - The browser that I put to use is Google Chrome.
 - Please have a look at the images below; they successively show how the game's page simulates on laptops, tabs, and smartphones.
 
-![An image of the game on an ASUS VIVO laptop](assets/images/readme-laptop.png)
+![An image of the game on an ASUS VIVO laptop](readme-images/laptop.png)
 
-![An image of the game on an iPad](assets/images/readme-ipad.png)
+![An image of the game on an iPad](readme-images/ipad.png)
 
-![An image of the game on a Galaxy S8+](assets/images/readme-galaxy-s8+.png)
+![An image of the game on a Galaxy S8+](readme-images/galaxy-s8+.png)
 
 # 11. Deployment
 
