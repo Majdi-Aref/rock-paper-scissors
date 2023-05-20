@@ -33,11 +33,11 @@
   - [8. 1. Testing the "Rock" Button](#8-1-testing-the-rock-button)
   - [8. 2. Testing the "Paper" Button](#8-2-testing-the-paper-button)
   - [8. 3. Testing the "Scissors" Button](#8-3-testing-the-scissors-button)
-  - [8. 4. Testing the function that disables the game buttons as a player of the computer wins a game](#8-4-testing-the-function-that-disables-the-game-buttons-as-a-player-of-the-computer-wins-a-game)
+  - [8. 4. Testing the Function That Disables the Game Buttons as a Player or the Computer Wins a Game](#8-4-testing-the-function-that-disables-the-game-buttons-as-a-player-or-the-computer-wins-a-game)
   - [8. 5. Testing the "Reset and Play Again" Button](#8-5-testing-the-reset-and-play-again-button)
-  - [8. 6. Testing the link to the Rock Paper Scissors' page on Facebook in the footer](#8-6-testing-the-link-to-the-rock-paper-scissors-page-on-facebook-in-the-footer)
-  - [8. 7. Testing the link to the Rock Paper Scissors' page on Instagram in the footer](#8-7-testing-the-link-to-the-rock-paper-scissors-page-on-instagram-in-the-footer)
-  - [8. 8. Testing the link to the Rock Paper Scissors' page on Twitter in the footer](#8-8-testing-the-link-to-the-rock-paper-scissors-page-on-twitter-in-the-footer)
+  - [8. 6. Testing the Link to the Rock Paper Scissors' Page on Facebook in the Footer](#8-6-testing-the-link-to-the-rock-paper-scissors-page-on-facebook-in-the-footer)
+  - [8. 7. Testing the Link to the Rock Paper Scissors' Page on Instagram in the Footer](#8-7-testing-the-link-to-the-rock-paper-scissors-page-on-instagram-in-the-footer)
+  - [8. 8. Testing the Link to the Rock Paper Scissors' Page on Twitter in the Footer](#8-8-testing-the-link-to-the-rock-paper-scissors-page-on-twitter-in-the-footer)
 - [9. Fixed Bugs](#9-fixed-bugs)
 - [10. Supported Screens \& Browsers](#10-supported-screens--browsers)
 - [11. Deployment](#11-deployment)
@@ -84,7 +84,7 @@
 
 ## 2. 3. Play Section
 
-- At the beginning of the play section, a user is instructed to choose one of three options: Either "Rock", "Paper", or "Scissors" to play against the computer.
+- At the beginning of the play section, a user is instructed to choose one of three options, "Rock", "Paper", or "Scissors", to play against the computer.
 - A user finds those options underneath those instructions in the form of three emojis, which are put inside three buttons, one for each of the three options.
 - As a user chooses an emoji, the computer automatically chooses an emoji.
 - The game rules dictate who wins a round of the game.
@@ -100,9 +100,9 @@
 
 - The result of each round will be demonstrated at the top of this section in the "round result" paragraph.
 - Below a round's result is the final result of a game that announces who won a game.
-- Underneath the fianl result are a player's score and the computer's score, which specify how many rounds a player wins and how many rounds the computer wins.
-- If a user wins a round, their score will be incremented by 1; similarly, if the computer wins a round, its score will be incremented by 1. If, however, the result of a round is"tie", the scores will remain the same.
-- As soon as a user or the computer has won 10 rounds, the final result paragraph will broadcast that, articulate the winner of a game, and stir a user up to click on the "Reset & Play Again" button, which is both found and accentuated at the bottom of the outcome section, to have a go at a new game.
+- Underneath the final result are a player's score and the computer's score, which specify how many rounds a player wins and how many rounds the computer wins.
+- If a user wins a round, their score will be incremented by 1; similarly, if the computer wins a round, its score will be incremented by 1. If, however, the result of a round is a "tie", the scores will remain the same.
+- As soon as a user or the computer has won 10 rounds, the final result paragraph will broadcast that, articulate the winner of a game, and stir a user up to click on the "Reset & Play Again" button, which is both found and accentuated at the bottom of the game's page, to have a go at a new game.
 - Please view the images of the outcome section below.
 
 ![An image of the outcome section on an Asus Vivo laptop](readme-images/result-laptop.png)
@@ -137,7 +137,7 @@
 - Three fonts from Google Fonts have been inserted into the style.css file: "Rampart One", "Fredoka", and "sans-serif".
 - Two colors have been applied as font colors: #00008B and #ff4500.
 - Two colors have been applied as background colors: #f0f8ff and #ffffe0.
-- Three emojis from www.emojipedia.org have been utilized as the game buttons: "rock", "paper", and "scissors".
+- Three emojis from www.emojipedia.org have been parked inside the game buttons: "rock", "paper", and "scissors".
 - Three icons from Font Awesome have been implemented as the social media icons: Facebook, Twitter, and Instagram.
 
 ![An image showing the "Rampart One" font from Google Fonts, the font color: #ff4500, and the background color: #ffffe0](readme-images/rampart-one-font.png)
@@ -230,7 +230,7 @@
 
 ## 7. 3. script.js File
 
-- Taking advantage of JSHint, I validated the script.js file of the game; 17 warnings were issued.
+- Taking advantage of JSHint, I validated the script.js file of the game; no warnings were issued.
 - Kindly inspect this validation's two images further down.
 
 ![Image 1 of the validation of the script.js file](readme-images/code-validation-js-1.png)
@@ -250,11 +250,11 @@
 - Test description: This test checks the functionality of the "Rock" button.
 - Steps:
   - Click on the "Rock" button.
-- Expected Results:
+- Expected results:
   - Clicking on the "Rock" button would make a message appear in the "Round result" paragraph; this message would establish the result of a game's round (tie, a player wins, or the computer wins).
   - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
   - When a player or the computer wins 10 rounds, the game buttons would be disabled, the "Reset and Play Again" button would come into sight, and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
-- Actual Result: The actual result is identical to the expected result.
+- Actual results: The actual results are identical to the expected results.
 - Two images below registered that the "Rock" button is fully functional.
 
 ![Image 1 documenting the functionality of the "Rock" button](readme-images/testing-rock-button-1.png)
@@ -266,11 +266,11 @@
 - Test description: This test checks the functionality of the "Paper" button.
 - Steps:
   - Click on the "Paper" button.
-- Expected Results:
+- Expected results:
   - Clicking on the "Paper" button would make a message in the "Round result" paragraph appear, which would establish the result of a game's round (tie, a player wins, or the computer wins).
   - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
   - When a player or the computer wins 10 rounds, the game buttons would be disabled, the "Reset and Play Again" button would come into sight, and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
-- Actual Result: The actual result is identical to the expected result.
+- Actual results: The actual results are identical to the expected results.
 - Two images below registered that the "Paper" button is fully functional.
 
 ![Image 1 documenting the functionality of the "Paper" button](readme-images/testing-paper-button-1.png)
@@ -282,24 +282,24 @@
 - Test description: This test checks the functionality of the "Scissors" button.
 - Steps:
   - Click on the "Scissors" button.
-- Expected Results:
+- Expected results:
   - Clicking on the "Scissors" button would make a message in the "Round result" paragraph appear, which would establish the result of a game's round (tie, a player wins, or the computer wins).
   - If a player or the computer wins a round, the player's score or the computer's score would be incremented by 1 respectively.
   - When a player or the computer wins 10 rounds, the game buttons would be disabled, the "Reset and Play Again" button would come into sight, and a message would pop up in the final result's paragraph reporting that a player or the computer would have won the game and inviting a player to click on the "Reset and Play Again" button to play a new game.
-- Actual Result: The actual result is identical to the expected result.
+- Actual results: The actual results are identical to the expected results.
 - Two images below registered that the "Scissors" button is fully functional.
 
 ![Image 1 documenting the functionality of the "Scissors" button](readme-images/testing-scissors-button-1.png)
 
 ![Image 2 documenting the functionality of the "Scissors" button](readme-images/testing-scissors-button-2.png)
 
-## 8. 4. Testing the function that disables the game buttons as a player of the computer wins a game
+## 8. 4. Testing the Function That Disables the Game Buttons as a Player or the Computer Wins a Game
 
-- Test description: This test makes sure that the game buttons are disabled as a player or the computer wins a game.
+- Test description: This test makes sure that the game buttons are going to be disabled as a player or the computer wins a game.
 - Steps:
   - Click on the game buttons repeatedly until a player or the computer wins a game.
-- Expected Results: As soon as a player or the computer wins a game, all three game buttons will be disabled at the same time.
-- Actual Result: The actual result is identical to the expected result.
+- Expected result: As soon as a player or the computer wins a game, all three game buttons will be disabled at the same instant.
+- Actual result: The actual result is identical to the expected result.
 - An image beneath registered that the game buttons are disabled as a player or the computer wins a game.
 
 ![An image documenting that the game buttons are disabled as a player or the computer wins a game](readme-images/testing-disabling-game-buttons.png)
@@ -309,37 +309,37 @@
 - Test description: This test checks the functionality of the "Reset and Play Again" button.
 - Steps:
   - Click on the "Reset and Play Again" button.
-- Expected Results: Clicking on the "Reset and Play Again" button would empty the round result's message and the final result's message, would reset a player's score and the computer's score, and would hide the "Reset and Play Again" button.
-- Actual Result: The actual result is identical to the expected result.
+- Expected results: Clicking on the "Reset and Play Again" button would empty the round result's message and the final result's message, would reset a player's score and the computer's score, and would hide the "Reset and Play Again" button.
+- Actual results: The actual results are identical to the expected results.
 - Two images beneath registered that the "Reset and Play Again" button is fully functional.
 
 ![Image 1 documenting the functionality of the "Reset and Play Again" button before clicking this button](readme-images/testing-reset-button-before.png)
 
 ![Image 2 documenting the functionality of the "Reset and Play Again" button after clicking this button](readme-images/testing-reset-button-after.png)
 
-## 8. 6. Testing the link to the Rock Paper Scissors' page on Facebook in the footer
+## 8. 6. Testing the Link to the Rock Paper Scissors' Page on Facebook in the Footer
 
 - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Facebook in the footer.
 - Steps:
   - Click on the link to the Rock Paper Scissors' page on Facebook in the footer.
-- Expected Result: The Rock Paper Scissors' page on Facebook should be opened in a new tab for the user.
-- Actual Result: The Rock Paper Scissors' page on Facebook was opened in a new tab for the user.
+- Expected result: The Rock Paper Scissors' page on Facebook should be opened in a new tab for the user.
+- Actual result: The Rock Paper Scissors' page on Facebook was opened in a new tab for the user.
 
-## 8. 7. Testing the link to the Rock Paper Scissors' page on Instagram in the footer
+## 8. 7. Testing the Link to the Rock Paper Scissors' Page on Instagram in the Footer
 
 - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Instagram in the footer.
 - Steps:
   - Click on the link to the Rock Paper Scissors' page on Instagram in the footer.
-- Expected Result: The Rock Paper Scissors' page on Instagram should be opened in a new tab for the user.
-- Actual Result: The Rock Paper Scissors' page on Instagram was opened in a new tab for the user.
+- Expected result: The Rock Paper Scissors' page on Instagram should be opened in a new tab for the user.
+- Actual result: The Rock Paper Scissors' page on Instagram was opened in a new tab for the user.
 
-## 8. 8. Testing the link to the Rock Paper Scissors' page on Twitter in the footer
+## 8. 8. Testing the Link to the Rock Paper Scissors' Page on Twitter in the Footer
 
 - Test description: This test checks the functionality of the link to the Rock Paper Scissors' page on Twitter in the footer.
 - Steps:
   - Click on the link to the Rock Paper Scissors' page on Twitter in the footer.
-- Expected Result: The Rock Paper Scissors' page on Twitter should be opened in a new tab for the user.
-- Actual Result: The Rock Paper Scissors' page on Twitter was opened in a new tab for the user.
+- Expected result: The Rock Paper Scissors' page on Twitter should be opened in a new tab for the user.
+- Actual result: The Rock Paper Scissors' page on Twitter was opened in a new tab for the user.
 
 # 9. Fixed Bugs
 
@@ -365,15 +365,15 @@
 - Open an account and create a new repository on Github.
 - Open Codeanywhere workspaces, then create a new workspace for the new repository that you created on Github; Codeanywhere will save the workspace that you created.
 - Open the Codeanywhere workspace that you just created.
-- As soon as you have opened your repository in Codeanywhere, you can use the terminal to run the necessary commands to build and deploy your website.
-- Using the terminal, create as many html and css files as you need for your project.
-- Using the terminal, create a readme.md file for your project.
+- As soon as you have opened your repository's workspace in Codeanywhere, you can use a terminal to run the necessary commands to build and deploy your website.
+- Create as many HTML, CSS, and JavaScript files as you need for your project in the root directory.
+- Create a readme.md file for your project in the root directory.
 - Type in the Codeanywhere's terminal the command: "python3 -m http.server", a small window opens at the right bottom corner.
 - In that small window, click on "Browser"; this opens your Github's repository through your Codeanywhere workspace in a browser in a new tab.
 - Press at that same time "Control + Shift + R" to refresh your browser.
 - Press at the same time "Control + S" to save the code you create in Codeanywhere worksace; this will automatically save it in your applicable file in your Codeanywhere workspaces.
-- Type in the Codeanywhere terminal the command: "git add ." to add your project's code that you have created during a working session of yours to your Codeanywhere workspace.
-- Type in the Codeanywhere terminal the command: "git commit -m 'what code, styling, documentation, or corrections you have made or done in your Codeanywhere workspace in just a few words'" to commit your project's code to your Codeanywhere workspace.
+- Type in the Codeanywhere terminal the command: "git add ." to add your project's code and/or documentation that you have created during a working session of yours to your Codeanywhere workspace.
+- Type in the Codeanywhere terminal the command: "git commit -m 'what code, styling, documentation, or corrections you have made or done in your Codeanywhere workspace in just a few words'" to save your project's code and documentation in your Codeanywhere workspace.
 - Type in the Codeanywhere terminal the command: "git push" to push and save your project's code in your Github's repository.
 
 ## 11. 2. Via Github
@@ -381,12 +381,12 @@
 - GitHub is a free code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 - Open Github and sign in.
 - Using the menu on the top right corner, click on "Your repositories".
-- Click on the repository that you want to open.
+- Click on the repository that you want to work on to open it.
 - On your repository page, click on "Settings".
 - On the settings' page, click on "Pages".
 - In Github pages under "Source" under "Build and deploy", choose "Deploy from a branch".
 - In Github pages under "branch", choose the option "main" and then click on "Save".
-- Typically within a couple minutes, your repository will be deployed; a public URL link of your repository will emerge on top of Github pages.
+- Typically within a couple minutes, your repository will be deployed; a public URL link of your repository will emerge on top of Github pages of your repository.
 - Click on the public URL link to open the new website of your repository live in a browser!
 
 # 12. Credits

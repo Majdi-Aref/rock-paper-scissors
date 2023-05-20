@@ -19,7 +19,7 @@ body {
 lower elements from overlapping underneath the footer element when the game is 
 displayed on iPads or smartphones */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 690px) {
     main {
         padding-bottom: 5.5rem;
     }
