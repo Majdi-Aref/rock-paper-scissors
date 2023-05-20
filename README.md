@@ -231,15 +231,11 @@
 ## 7. 3. script.js File
 
 - Taking advantage of JSHint, I validated the script.js file of the game; 17 warnings were issued.
-- Kindly inspect the 4 images of this validation further down.
+- Kindly inspect this validation's two images further down.
 
 ![Image 1 of the validation of the script.js file](readme-images/code-validation-js-1.png)
 
 ![Image 2 of the validation of the script.js file](readme-images/code-validation-js-2.png)
-
-![Image 3 of the validation of the script.js file](readme-images/code-validation-js-3.png)
-
-![Image 4 of the validation of the script.js file](readme-images/code-validation-js-4.png)
 
 ## 7. 4. Google Lighthouse Report
 
@@ -306,7 +302,7 @@
 - Actual Result: The actual result is identical to the expected result.
 - An image beneath registered that the game buttons are disabled as a player or the computer wins a game.
 
-![An image documenting that the game buttons are disabled as a player or the computer wins a game](readme-images/buttons-disabled.png)
+![An image documenting that the game buttons are disabled as a player or the computer wins a game](readme-images/testing-disabling-game-buttons.png)
 
 ## 8. 5. Testing the "Reset and Play Again" Button
 
