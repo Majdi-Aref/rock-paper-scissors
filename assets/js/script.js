@@ -62,15 +62,15 @@ function getComputerChoice() {
 function determineRoundResult(playerChoice, computerChoice) {
     let result;
     if (computerChoice === playerChoice) {
-        result = "It is a tie.";
+        result = "it is a tie.";
     } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")
     ) {
-        result = "You won this round.";
+        result = "you won this round.";
     } else {
-        result = "The computer won this round.";
+        result = "the computer won this round.";
     }
     return result;
 }
@@ -90,11 +90,11 @@ function updateRoundResultText(playerChoice, computerChoice, result) {
  * @param {string} result
  */
 function updateScores(result) {
-    if (result === "You won this round.") {
+    if (result === "you won this round.") {
         totalPlayerScore++;
         playerScore.textContent = totalPlayerScore;
     }
-    if (result === "The computer won this round.") {
+    if (result === "the computer won this round.") {
         totalComputerScore++;
         computerScore.textContent = totalComputerScore;
     }

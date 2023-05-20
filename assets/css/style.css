@@ -15,8 +15,11 @@ body {
     background-color: #f0f8ff;
 }
 
-/* Creating some padding at the bottom of the <main> element to prevent the lower elements from overlapping underneath the footer element when the game is displayed on screens that are maximally 380 px wide. */
-@media screen and (max-width: 380px) {
+/* Creating some padding at the bottom of the <main> element to prevent the 
+lower elements from overlapping underneath the footer element when the game is 
+displayed on iPads or smartphones */
+
+@media screen and (max-width: 640px) {
     main {
         padding-bottom: 5rem;
     }
@@ -68,18 +71,20 @@ button:hover {
     background-color: #ffffe0;
 }
 
-/* Styling of game rules' section */
-.rules {
-    text-align: center;
-}
-
+/* Giving all paragraphs a breathing margin left and right */
 p {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     text-align: center;
 }
 
-/* Play section's styles (including a media query for smartphones that are maximally 260 px wide)  */
+/* Styling of game rules' section */
+.rules {
+    text-align: center;
+}
+
+/* Play section's styles (including a media query for smartphones that are 
+maximally 260 px wide)  */
 @media screen and (max-width: 260px) {
     #scissors-button {
         margin-top: 0;
@@ -87,12 +92,18 @@ p {
 }
 
 /* Result section's styles */
+/* Removing the top-margin of the outcome's heading significantly improves the 
+spatial arrangment of the game on all screen sizes */
 .outcome-heading {
     margin-top: 0;
 }
 
 .outcome span {
     color: #ff4500;
+}
+
+.computer-paragraph {
+    margin-bottom: 0.5rem;
 }
 
 .reset-button-div {
@@ -107,14 +118,8 @@ p {
     display: none;
 }
 
-/* footer */
-
-nav {
-    background-color: #ffffe0;
-    padding: 1rem;
-}
-
-/* fixing the footer at the bottom of the webpage to prevent it from sliding upwards. */
+/* Fixing the footer at the bottom of the webpage to prevent it from sliding 
+upwards. */
 .footer-place {
     position: fixed;
     width: 100%;
