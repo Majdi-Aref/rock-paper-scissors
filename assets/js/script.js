@@ -38,7 +38,7 @@ function playRound(playerChoice) {
     let result = determineRoundResult(playerChoice, computerChoice);
     updateRoundResultText(playerChoice, computerChoice, result);
     updateScores(result);
-    announceWinner ();
+    announceWinner();
     checkGameOver();
 }
 
@@ -62,15 +62,15 @@ function getComputerChoice() {
 function determineRoundResult(playerChoice, computerChoice) {
     let result;
     if (computerChoice === playerChoice) {
-        result = "Tie";
+        result = "It is a tie.";
     } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")
-    ) { 
-        result = "You have won this round.";
+    ) {
+        result = "You won this round.";
     } else {
-        result = "The computer has won this round.";
+        result = "The computer won this round.";
     }
     return result;
 }
@@ -82,19 +82,19 @@ function determineRoundResult(playerChoice, computerChoice) {
  * @param {*} result
  */
 function updateRoundResultText(playerChoice, computerChoice, result) {
-    roundResultText.textContent = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
+    roundResultText.textContent = `You chose ${playerChoice}, the computer chose ${computerChoice}; ${result}`;
 }
 
 /**
  * Function to update the player's score and the computer's score
  * @param {*} result
  */
-function updateScores (result) {
-    if (result === "You have won this round.") {
+function updateScores(result) {
+    if (result === "You won this round.") {
         totalPlayerScore++;
         playerScore.textContent = totalPlayerScore;
     }
-    if (result === "The computer has won this round.") {
+    if (result === "The computer won this round.") {
         totalComputerScore++;
         computerScore.textContent = totalComputerScore;
     }
@@ -103,12 +103,12 @@ function updateScores (result) {
 /**
  * Function to announce the winner of the game
  */
-function announceWinner () {
+function announceWinner() {
     if (totalPlayerScore === 10) {
-        finalResultText.textContent = `You have won the game! Please press the "Reset & Play Again" button below to start a new game.`;
+        finalResultText.textContent = `You won the game! Please press the "Reset & Play Again" button below to start a new game.`;
     }
     else if (totalComputerScore === 10) {
-        finalResultText.textContent = `The computer has won the game! Please press the "Reset & Play Again" button below to start a new game.`;
+        finalResultText.textContent = `The computer won the game! Please press the "Reset & Play Again" button below to start a new game.`;
     }
 }
 
@@ -119,10 +119,13 @@ function announceWinner () {
  * and the "Reset and play again" button will appear.
  */
 function checkGameOver() {
-    if (totalPlayerScore === 10) {
-        gameOver = true;
-        resetButton.style.display = "initial";
-    } else if (totalComputerScore === 10) {
+    if (
+        (totalPlayerScore === 10) ||
+        (totalComputerScore === 10)
+    ) {
+        gameButtons.forEach(gameButton => {
+            gameButton.disabled = true;
+        });
         gameOver = true;
         resetButton.style.display = "initial";
     }
@@ -144,6 +147,9 @@ function resetGame() {
     finalResultText.textContent = "";
     gameOver = false;
     resetButton.style.display = "none";
+    gameButtons.forEach(gameButton => {
+        gameButton.disabled = false;
+    });
 }
 
 /**
